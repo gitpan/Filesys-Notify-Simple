@@ -5,6 +5,7 @@ author:
 build_requires:
   ExtUtils::MakeMaker: 6.42
   Test::More: 0
+  Test::SharedFork: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.42
 distribution_type: module
@@ -25,4 +26,4 @@ requires:
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/miyagawa/Filesys-Notify-Simple.git
-version: 0.01
+version: 0.02
