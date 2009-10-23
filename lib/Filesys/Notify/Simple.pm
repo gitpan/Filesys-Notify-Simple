@@ -2,7 +2,7 @@ package Filesys::Notify::Simple;
 
 use strict;
 use 5.008_001;
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 use Carp ();
 use Cwd;
@@ -47,7 +47,8 @@ sub wait_inotify2 {
     Linux::Inotify2->import;
     my $inotify = Linux::Inotify2->new;
 
-    for my $path (@path) {
+    my $fs = _full_scan(@path);
+    for my $path (keys %$fs) {
         $inotify->watch($path, &IN_MODIFY|&IN_CREATE|&IN_DELETE|&IN_DELETE_SELF|&IN_MOVE_SELF);
     }
 
