@@ -3,6 +3,7 @@ abstract: 'Simple and dumb file system watcher'
 author:
   - 'Tatsuhiko Miyagawa <miyagawa@bulknews.net>'
 build_requires:
+  File::Temp: 0
   Test::More: 0
   Test::SharedFork: 0
 configure_requires:
@@ -28,10 +29,11 @@ resources:
   bugtracker: https://github.com/miyagawa/Filesys-Notify-Simple/issues
   homepage: https://github.com/miyagawa/Filesys-Notify-Simple
   repository: https://github.com/miyagawa/Filesys-Notify-Simple.git
-version: 0.11
+version: 0.12
 x_contributors:
   - 'Chia-liang Kao <clkao@clkao.org>'
   - 'Christiaan Kras <c.kras@pcc-online.net>'
+  - 'Kent Fredric <kentfredric@gmail.com>'
   - 'Kenta Sato <karupa@cpan.org>'
   - 'Masahiro Chiba <chiba@everqueue.com>'
   - 'Tatsuhiko Miyagawa <miyagawa@gmail.com>'
